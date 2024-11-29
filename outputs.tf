@@ -8,12 +8,12 @@ output "ec2_transit_gateway_arn" {
   value       = aws_ec2_transit_gateway.transit_gateway.arn
 }
 
-output "ec2_transit_gateway_association_default_route_table_id" {
+output "association_default_route_table_id" {
   description = "The ID of the default association route table"
   value       = aws_ec2_transit_gateway.transit_gateway.association_default_route_table_id
 }
 
-output "ec2_transit_gateway_propagation_default_route_table_id" {
+output "propagation_default_route_table_id" {
   description = "The ID of the default propagation route table"
   value       = aws_ec2_transit_gateway.transit_gateway.propagation_default_route_table_id
 }
