@@ -1,5 +1,7 @@
 # tf-aws-module_primitive-transit_gateway
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+This repository contains a Terraform module for creating and managing an AWS EC2 Transit Gateway.
+The module provides configurable options for various Transit Gateway settings, including route table associations, route table propagations, and support for multicast, VPN ECMP, and DNS. 
+It also includes outputs for key Transit Gateway attributes such as ID, ARN, and owner ID.
 ## Requirements
 
 | Name | Version |
