@@ -14,6 +14,10 @@ import (
 )
 
 func TestComposableComplete(t *testing.T, ctx types.TestContext) {
+	TestComposableCompleteReadonly(t, ctx)
+}
+
+func TestComposableCompleteReadonly(t *testing.T, ctx types.TestContext) {
 	awsclient := GetAWSTransitGatewayClient(t)
 	t.Run("TestTransitGatewayIdExists", func(t *testing.T) {
 		tftgwID := terraform.Output(t, ctx.TerratestTerraformOptions(), "transit_gateway_id")
